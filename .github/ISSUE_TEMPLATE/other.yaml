@@ -1,0 +1,43 @@
+name: Other
+description: General questions or discussions
+title: ""
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reaching out about the OpenTelemetry Go vanity URLs service.
+
+  - type: input
+    id: component
+    attributes:
+      label: Component
+      description: Which component is this related to?
+      placeholder: "e.g., go.opentelemetry.io/otel, go.opentelemetry.io/contrib"
+    validations:
+      required: false
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Question or Discussion
+      description: A clear and concise description of your question or what you'd like to discuss.
+      placeholder: Tell us what you'd like to know or discuss!
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add any other context about your question or discussion here.
+    validations:
+      required: false
+
+  - type: dropdown
+    attributes:
+      label: Tip
+      description: This element is static, used to render a helpful sub-heading for end-users and community members to help prioritize issues. Please leave as is.
+      options:
+        - <sub>[React](https://github.blog/news-insights/product-news/add-reactions-to-pull-requests-issues-and-comments/) with 👍 to help prioritize this issue. Please use comments to provide useful context, avoiding `+1` or `me too`, to help us triage it. Learn more [here](https://opentelemetry.io/community/end-user/issue-participation/).</sub>
+      default: 0
